@@ -38,7 +38,7 @@ TESTS = {
         {
             "input": ["1+2="],
             "answer": "3",
-            "explanation": "standart operation",
+            "explanation": "standard operation",
         },
         {
             "input": ["1+2-"],
