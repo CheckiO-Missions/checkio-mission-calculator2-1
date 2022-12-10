@@ -11,26 +11,62 @@ Each test is a dict with
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": ["12"],
+            "answer": "12",
+            "explanation": "you see what you enter",
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
-        }
+            "input": ["+12"],
+            "answer": "12",
+            "explanation": "ignore beginning operations",
+        },
+        {
+            "input": [""],
+            "answer": "",
+            "explanation": "no input",
+        },
+        {
+            "input": ["1+2"],
+            "answer": "2",
+            "explanation": "last entered number, no operations after",
+        },
+        {
+            "input": ["2+"],
+            "answer": "2",
+            "explanation": "single +/- do nothing",
+        },
+        {
+            "input": ["1+2="],
+            "answer": "3",
+            "explanation": "standart operation",
+        },
+        {
+            "input": ["1+2-"],
+            "answer": "3",
+            "explanation": "last sign requires previous calculations to be done",
+        },
+        {
+            "input": ["1+2=2"],
+            "answer": "2",
+            "explanation": "entering number rewrite previous result",
+        },
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": ["-5-10+15"],
+            "answer": "15",
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
-        }
+            "input": ["-5-10+15-"],
+            "answer": "10",
+        },
+        {
+            "input": ["=5=10=15"],
+            "answer": "15",
+        },
+        {
+            "input": ["+1+2+3+4="],
+            "answer": "10",
+        },
     ]
 }
