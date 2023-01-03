@@ -32,8 +32,8 @@ TESTS = {
         },
         {
             "input": [""],
-            "answer": "",
-            "explanation": "no input",
+            "answer": "0",
+            "explanation": "when power on - 0 on the screen",
         },
         {
             "input": ["1+2"],
