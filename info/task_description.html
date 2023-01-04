@@ -9,12 +9,15 @@
     In this series of missions you are going to build an elementary calculator.
 </p>
 <p>
-    As an input, you get a sequence of keys pressed, and, as the result of that function, you should show what will be shown on the screen when the last key is pressed. Be attentive, it's not always the result of the expression. Actually, playing with the physical calculator or app will really helps you to catch edge cases.
+    As an input, you get a sequence of keys pressed, and, as the result of that function, you should show what will be shown on the screen when the last key is pressed. Be attentive, it's not always the result of the expression. Actually, playing with the physical calculator or app will really help you to catch edge cases.
 </p>
 <p>
-    The calculator has a very simple keyboard. In the first mission only digits (0-9) and single signs plus (-), minus (+) or equation (=) are allowed. See preconditions below for additional information.
+    <strong>Expected behavior:</strong>
+    <ul>
+        <li><i>beginning operations are ignored;</i></li>
+        <li><i>beginning zeros should be removed, only-zeros number - converted to single zero.</i></li>
+    </ul>
 </p>
-
 <!-- Explain input and output values -->
 <p>
     <strong>Input:</strong> String.
@@ -30,7 +33,6 @@
 <!-- Here you can explain how it can be used in development -->
 <!-- The section is optional -->
 <p class="for_info_only">
-
     <strong>How it’s used:</strong>
     <i>Calculators are widely used. Understanding the principles of its input and output are interesting and useful.</i>
 </p>
@@ -39,8 +41,5 @@
 <!-- The section is optional -->
 <p>
     <strong>Precondition:</strong>
-    <ul>
-        <li><i>beginning operations are ignored;</i></li>
-        <li><i>beginning zeros should be removed, only-zeros number - converted to single zero.</i></li>
-    </ul>
+    <i>Allowed characters: digits (0-9), single signs plus (+), minus (-) or equation (=) between digit blocks. NO combinations of signs (+=, +- etc.).</i>
 </p>
