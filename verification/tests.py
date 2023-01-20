@@ -88,7 +88,7 @@ TESTS = {
         },
         {
             "input": ["+"],
-            "answer": "",
+            "answer": "0",
         },
     ]
 }
